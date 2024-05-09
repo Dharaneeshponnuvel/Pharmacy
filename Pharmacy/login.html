@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Green.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            background-color: rgb(0, 128, 94);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Login</h1>
+            <p>Please enter your credentials to log in.</p>
+        </header>
+        <form id="loginForm" action="login.php" method="post">
+            <div class="form">
+                <div class="right">
+                    <div class="contact-form">
+                        <input type="email" name="email" id="email" required>
+                        <span></span>
+                    </div>
+    
+                    <div class="contact-form">
+                        <input type="password" name="password" id="password" required>
+                        <span></span>
+                    </div>
+    
+                    <div class="contact-form">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="contact-form">
+                        <button type="button" onclick="window.location.href='signup.php'">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="empty"></div>
+    </div>    
+</body>
+</html>

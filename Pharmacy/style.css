@@ -1,0 +1,151 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+    align-self: flex-start;
+}
+
+.top-bar-content {
+    display: flex;
+    align-items: center;
+}
+
+
+   /* Welcome Message Styles */
+.welcome-message {
+    text-align: center;
+    align-items: center;
+    align-content: baseline;
+}
+
+.welcome-message p {
+    color: #fff;
+    font-weight: bold;
+}
+    
+
+
+.search-bar {
+    width: 600px; /* Adjusted width for the search bar */
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    align-items: flex-end;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cart-counter {
+color: red; /* Change the color to red (or any other color you prefer) */
+}
+
+.navigation a:hover {
+    color: #f8f9fa;
+}
+
+/* Main Content Styles */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 5px;
+}
+
+.product button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #c82333;
+}
